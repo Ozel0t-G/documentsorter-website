@@ -22,6 +22,6 @@ Open `http://localhost:8080`.
 
 Publish from the repository's `main` branch and root directory. The expected URL is:
 
-`https://ozel0t.github.io/documentsorter-website/`
+`https://ozel0t-g.github.io/documentsorter-website/`
 
 Before App Store or Google OAuth submission, add a verified private contact email and the publisher's legal identity to the privacy policy. A custom domain can be connected later without changing the site structure.

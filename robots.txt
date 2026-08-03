@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ozel0t.github.io/documentsorter-website/sitemap.xml
+Sitemap: https://ozel0t-g.github.io/documentsorter-website/sitemap.xml
