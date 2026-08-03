@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070a12">
+  <meta name="description" content="Help and support for DocumentSorter on macOS.">
+  <title>Support — DocumentSorter</title>
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="glass nav-shell" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="34" height="34"><span>DocumentSorter</span></a>
+      <div class="nav-links"><a href="index.html" data-en="Overview" data-de="Übersicht">Overview</a><a href="privacy.html" data-en="Privacy" data-de="Datenschutz">Privacy</a><a href="support.html">Support</a></div>
+      <button class="language-toggle" type="button" aria-label="Sprache auf Deutsch wechseln"><span class="language-current">DE</span></button>
+    </nav>
+  </header>
+
+  <main id="main" class="legal-main section-wrap">
+    <header class="legal-hero reveal">
+      <p class="overline">DocumentSorter Support</p>
+      <h1 data-en="How can we help?" data-de="Wie können wir helfen?">How can we help?</h1>
+      <p data-en="Find quick answers or report a problem directly to the developer." data-de="Finde schnelle Antworten oder melde ein Problem direkt an den Entwickler.">Find quick answers or report a problem directly to the developer.</p>
+    </header>
+
+    <div class="support-grid">
+      <article class="support-card glass reveal">
+        <h2 data-en="Report a problem" data-de="Problem melden">Report a problem</h2>
+        <p data-en="Open a GitHub issue with your macOS version, the DocumentSorter version, and steps that reproduce the problem. Never include documents, passwords, or API keys." data-de="Erstelle ein GitHub-Issue mit deiner macOS-Version, der DocumentSorter-Version und den Schritten zum Nachstellen. Füge niemals Dokumente, Passwörter oder API-Schlüssel bei.">Open a GitHub issue with your macOS version, the DocumentSorter version, and steps that reproduce the problem. Never include documents, passwords, or API keys.</p>
+        <a class="button button-secondary" href="https://github.com/ozel0t/documentsorter-website/issues/new" rel="noreferrer" data-en="Open GitHub issue" data-de="GitHub-Issue öffnen">Open GitHub issue</a>
+      </article>
+      <article class="support-card glass reveal">
+        <h2 data-en="Privacy question" data-de="Datenschutzfrage">Privacy question</h2>
+        <p data-en="Read exactly what remains local and what optional services receive. For a private inquiry, use the contact information published on the developer's GitHub profile." data-de="Lies genau nach, was lokal bleibt und welche Daten optionale Dienste erhalten. Für eine vertrauliche Anfrage nutze die Kontaktangaben im GitHub-Profil des Entwicklers.">Read exactly what remains local and what optional services receive. For a private inquiry, use the contact information published on the developer's GitHub profile.</p>
+        <a class="button button-secondary" href="privacy.html" data-en="View privacy policy" data-de="Datenschutzerklärung ansehen">View privacy policy</a>
+      </article>
+    </div>
+
+    <section class="faq reveal">
+      <h2 data-en="Common questions" data-de="Häufige Fragen">Common questions</h2>
+      <details><summary data-en="Does DocumentSorter upload my files?" data-de="Lädt DocumentSorter meine Dateien hoch?">Does DocumentSorter upload my files?</summary><p data-en="Not when on-device processing is selected. If you explicitly enable Claude, extracted document text and destination-folder names are sent directly to Anthropic using your own API key." data-de="Nicht bei ausgewählter lokaler Verarbeitung. Wenn du Claude ausdrücklich aktivierst, werden extrahierter Dokumenttext und Zielordnernamen mit deinem eigenen API-Schlüssel direkt an Anthropic gesendet.">Not when on-device processing is selected. If you explicitly enable Claude, extracted document text and destination-folder names are sent directly to Anthropic using your own API key.</p></details>
+      <details><summary data-en="Why is a document waiting for review?" data-de="Warum wartet ein Dokument auf Prüfung?">Why is a document waiting for review?</summary><p data-en="Documents with low confidence, missing destinations, possible duplicates, or an email origin are held for review to prevent incorrect filing." data-de="Dokumente mit geringer Sicherheit, fehlendem Ziel, möglichen Duplikaten oder aus E-Mails werden zur Prüfung zurückgehalten, um eine falsche Ablage zu verhindern.">Documents with low confidence, missing destinations, possible duplicates, or an email origin are held for review to prevent incorrect filing.</p></details>
+      <details><summary data-en="Where are passwords and API keys stored?" data-de="Wo werden Passwörter und API-Schlüssel gespeichert?">Where are passwords and API keys stored?</summary><p data-en="They are stored in your macOS login Keychain, separate from DocumentSorter's local database." data-de="Sie werden in deinem macOS-Anmeldeschlüsselbund gespeichert, getrennt von der lokalen DocumentSorter-Datenbank.">They are stored in your macOS login Keychain, separate from DocumentSorter's local database.</p></details>
+      <details><summary data-en="Can DocumentSorter overwrite an existing file?" data-de="Kann DocumentSorter eine vorhandene Datei überschreiben?">Can DocumentSorter overwrite an existing file?</summary><p data-en="No. Name collisions receive a numbered suffix, and completed moves can be undone from the app." data-de="Nein. Bei Namenskonflikten wird eine nummerierte Ergänzung verwendet; abgeschlossene Verschiebungen können in der App rückgängig gemacht werden.">No. Name collisions receive a numbered suffix, and completed moves can be undone from the app.</p></details>
+      <details><summary data-en="Which files are supported?" data-de="Welche Dateien werden unterstützt?">Which files are supported?</summary><p data-en="DocumentSorter handles PDFs, Word and RTF documents, HTML, common text and data formats, and source-code files. Scanned PDFs can use Vision OCR." data-de="DocumentSorter verarbeitet PDFs, Word- und RTF-Dokumente, HTML, gängige Text- und Datenformate sowie Quellcode-Dateien. Für gescannte PDFs kann Vision OCR verwendet werden.">DocumentSorter handles PDFs, Word and RTF documents, HTML, common text and data formats, and source-code files. Scanned PDFs can use Vision OCR.</p></details>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><div class="footer-brand"><img src="assets/app-icon.png" alt="" width="28" height="28"><span>DocumentSorter</span></div><div class="footer-links"><a href="index.html" data-en="Overview" data-de="Übersicht">Overview</a><a href="privacy.html" data-en="Privacy" data-de="Datenschutz">Privacy</a><a href="https://github.com/ozel0t/documentsorter-website">GitHub</a></div><p>© 2026 DocumentSorter.</p></footer>
+</body>
+</html>

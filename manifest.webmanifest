@@ -1,0 +1,12 @@
+{
+  "name": "DocumentSorter",
+  "short_name": "DocumentSorter",
+  "description": "Intelligent, private document filing for macOS.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#060811",
+  "theme_color": "#070a12",
+  "icons": [
+    { "src": "assets/app-icon.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
