@@ -1,140 +1,40 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-page-title-en="Privacy Policy — Clastra" data-page-title-no="Personvernerklæring — Clastra">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070a12">
-  <meta name="description" content="Privacy policy for the DocumentSorter macOS app.">
-  <title>Privacy Policy — DocumentSorter</title>
-  <link rel="icon" href="assets/app-icon.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f5f7">
+  <meta name="description" content="Privacy policy for the Clastra macOS app."><title>Privacy Policy — Clastra</title>
+  <link rel="icon" href="assets/app-icon.png"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <header class="site-header">
-    <nav class="glass nav-shell" aria-label="Main navigation">
-      <a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="34" height="34"><span>DocumentSorter</span></a>
-      <div class="nav-links"><a href="index.html" data-en="Overview" data-de="Übersicht">Overview</a><a href="privacy.html" data-en="Privacy" data-de="Datenschutz">Privacy</a><a href="support.html">Support</a></div>
-      <button class="language-toggle" type="button" aria-label="Sprache auf Deutsch wechseln"><span class="language-current">DE</span></button>
-    </nav>
-  </header>
-
+  <a class="skip-link" href="#main" data-en="Skip to content" data-no="Hopp til innhold">Skip to content</a>
+  <header class="site-header"><nav class="nav-shell" aria-label="Main navigation"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="36" height="36"><span>Clastra</span></a><div class="nav-links"><a href="index.html" data-en="Overview" data-no="Oversikt">Overview</a><a href="privacy.html" data-en="Privacy" data-no="Personvern">Privacy</a><a href="support.html" data-en="Support" data-no="Brukerstøtte">Support</a></div><div class="nav-actions"><button class="language-toggle" type="button" aria-label="Bytt språk til norsk"><span class="language-current">NO</span></button><a class="button button-compact button-primary" href="index.html#availability" data-en="Get Clastra" data-no="Få Clastra">Get Clastra</a></div></nav></header>
   <main id="main" class="legal-main section-wrap">
-    <header class="legal-hero reveal">
-      <p class="overline" data-en="Transparent by design" data-de="Transparenz von Anfang an">Transparent by design</p>
-      <h1 data-en="Privacy Policy" data-de="Datenschutzerklärung">Privacy Policy</h1>
-      <p data-en="Effective August 3, 2026 · Applies to the DocumentSorter app for macOS and this website." data-de="Gültig ab 3. August 2026 · Gilt für die macOS-App DocumentSorter und diese Website.">Effective August 3, 2026 · Applies to the DocumentSorter app for macOS and this website.</p>
-    </header>
-
+    <header class="legal-hero reveal"><p class="overline" data-en="Transparent by design" data-no="Åpenhet fra grunnen av">Transparent by design</p><h1 data-en="Privacy Policy" data-no="Personvernerklæring">Privacy Policy</h1><p data-en="Effective 4 August 2026 · Applies to Clastra for macOS and this website." data-no="Gjelder fra 4. august 2026 · Omfatter Clastra for macOS og dette nettstedet.">Effective 4 August 2026 · Applies to Clastra for macOS and this website.</p></header>
     <div data-language-panel="en" class="language-panel">
-      <div class="legal-layout">
-        <aside class="legal-toc glass"><strong>Contents</strong><a href="#en-summary">Summary</a><a href="#en-local">Local data</a><a href="#en-ai">Optional AI</a><a href="#en-mail">Mail access</a><a href="#en-website">Website</a><a href="#en-control">Your control</a><a href="#en-contact">Contact</a></aside>
-        <article class="legal-document glass">
-          <section id="en-summary">
-            <h2>1. The short version</h2>
-            <p>DocumentSorter is designed to work without a developer-operated account or cloud service. The app does not contain advertising, analytics, cross-app tracking, or telemetry. By default, document processing happens on your Mac.</p>
-            <p>Two optional features can create network connections: connecting an IMAP mail account and choosing Anthropic Claude for document classification. Both are configured and controlled by you.</p>
-          </section>
-          <section id="en-local">
-            <h2>2. Data stored on your Mac</h2>
-            <p>DocumentSorter may store the following information locally in its sandboxed app container:</p>
-            <ul>
-              <li>document-processing status, classification results, review history, and move receipts;</li>
-              <li>the folder locations and rules you choose;</li>
-              <li>app preferences, including OCR languages and classification settings;</li>
-              <li>mail account configuration, excluding passwords;</li>
-              <li>locally calculated API-usage and cost estimates.</li>
-            </ul>
-            <p>Mail passwords and your optional Anthropic API key are stored separately in the macOS Keychain. The app uses macOS security-scoped bookmarks to access only folders you select.</p>
-          </section>
-          <section id="en-ai">
-            <h2>3. Document processing and optional Claude access</h2>
-            <h3>On-device processing</h3>
-            <p>When on-device processing is selected and available, extracted document text, destination-folder names, and classification results stay on your Mac and are not sent to the developer.</p>
-            <h3>Anthropic Claude (optional)</h3>
-            <p>Claude processing is disabled until you add your own Anthropic API key and explicitly allow cloud processing. When enabled, the app sends extracted document text, your destination-folder names, your custom classification instructions, and the requested output language directly to Anthropic's Messages API. Anthropic returns a classification result to the app.</p>
-            <p>The developer does not proxy, receive, or store these requests. Anthropic processes the data under your relationship with Anthropic and its applicable terms and privacy documentation. Do not enable this option for documents you are not permitted to send to Anthropic.</p>
-          </section>
-          <section id="en-mail">
-            <h2>4. Optional mail access</h2>
-            <p>If you add an IMAP account, DocumentSorter connects directly from your Mac to the mail provider you configure. It checks the selected mailbox for new messages and extracts only attachment types you allow. Matching attachments are saved into the local inbox folder you select and always require review before filing.</p>
-            <p>Mail credentials are stored in macOS Keychain. Message data needed for attachment extraction is handled locally and is not sent to the developer. DocumentSorter stores the last processed IMAP identifier locally to avoid duplicate downloads. Your mail provider independently processes connection and account data under its own privacy terms.</p>
-          </section>
-          <section id="en-website">
-            <h2>5. This website</h2>
-            <p>This website is a static GitHub Pages site. It does not use cookies, analytics, advertising, contact forms, or embedded third-party media. A language preference may be saved locally in your browser using local storage and is never transmitted by the site.</p>
-            <p>As the hosting provider, GitHub may process technical request information such as IP address and browser details. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">GitHub General Privacy Statement</a>.</p>
-          </section>
-          <section id="en-control">
-            <h2>6. Retention, deletion, and your choices</h2>
-            <p>Data stored by the app remains on your Mac until you remove it, delete the associated configuration, or uninstall the app and its data. You can remove a mail account and its saved password, remove the Anthropic API key, revoke cloud-processing consent, and disconnect selected folders in the app's settings.</p>
-            <p>To revoke provider-side access, also revoke the app or credential in the account settings of the relevant mail or AI provider. Because the developer does not operate an account database for DocumentSorter, the developer generally has no server-side app data to retrieve or delete for you.</p>
-          </section>
-          <section id="en-contact">
-            <h2>7. Contact and changes</h2>
-            <p>DocumentSorter is maintained by the independent developer identified on its App Store product page. For privacy questions or support, use the contact channel listed on the <a href="support.html">support page</a> or the contact information on the developer's <a href="https://github.com/Ozel0t-G" rel="noreferrer">GitHub profile</a>.</p>
-            <p>This policy may be updated when the app's features or legal requirements change. Material changes will be reflected here with a new effective date.</p>
-          </section>
-        </article>
-      </div>
+      <div class="legal-layout"><aside class="legal-toc"><strong>Contents</strong><a href="#en-summary">Summary</a><a href="#en-local">Local data</a><a href="#en-ai">Optional AI</a><a href="#en-mail">Mail access</a><a href="#en-site">Website</a><a href="#en-control">Your control</a><a href="#en-contact">Contact</a></aside>
+      <article class="legal-document">
+        <section id="en-summary"><h2>1. The short version</h2><p>Clastra works without a developer-operated account or cloud service. The app contains no advertising, analytics, cross-app tracking, or telemetry. By default, document processing happens on your Mac.</p><p>Optional network connections are created only when you configure a mail account or select a cloud AI model such as Anthropic Claude. You remain in control of both.</p></section>
+        <section id="en-local"><h2>2. Data stored on your Mac</h2><p>Clastra may store processing status, classification results, review history, move receipts, chosen folders, rules, preferences, mail configuration without passwords, and locally calculated usage or cost estimates in its sandboxed app container.</p><p>Mail passwords and optional API keys are stored separately in macOS Keychain. Security-scoped bookmarks let Clastra access only the folders you select.</p></section>
+        <section id="en-ai"><h2>3. Document processing and optional AI</h2><h3>Apple on-device intelligence</h3><p>When an on-device model is selected and available, extracted text, folder names, and classification results stay on your Mac and are not sent to the developer.</p><h3>Private Cloud Compute</h3><p>If Apple makes Private Cloud Compute available through your system and you select it, processing is governed by Apple's applicable system terms and privacy information. Clastra does not receive those requests.</p><h3>Anthropic Claude (optional)</h3><p>Claude stays disabled until you add your own API key and explicitly allow cloud processing. Clastra then sends extracted document text, destination-folder names, custom instructions, and the requested output language directly to Anthropic's API. The developer does not proxy, receive, or store those requests.</p></section>
+        <section id="en-mail"><h2>4. Optional mail access</h2><p>If you add an IMAP account, Clastra connects directly from your Mac to the provider you configure. It checks the selected mailbox and extracts only attachment types you allow. Matching attachments are saved into your local inbox and wait for review.</p><p>Credentials remain in Keychain. Clastra stores the last processed IMAP identifier locally to prevent duplicate downloads. Your provider processes connection and account data under its own terms.</p></section>
+        <section id="en-site"><h2>5. This website</h2><p>This static GitHub Pages website uses no cookies, analytics, advertising, contact forms, or embedded third-party media. Your English or Norwegian language preference is saved only in browser local storage.</p><p>GitHub may process technical request information as hosting provider. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">GitHub General Privacy Statement</a>.</p></section>
+        <section id="en-control"><h2>6. Retention, deletion, and your choices</h2><p>App data remains on your Mac until you remove it, delete the related configuration, or uninstall Clastra and its data. In Settings you can disconnect folders, remove mail accounts and credentials, delete API keys, and revoke cloud-processing consent.</p></section>
+        <section id="en-contact"><h2>7. Contact and changes</h2><p>For privacy questions, use the channel listed on the <a href="support.html">support page</a> or the contact details on the developer's <a href="https://github.com/Ozel0t-G" rel="noreferrer">GitHub profile</a>. Material policy changes will appear here with a new effective date.</p></section>
+      </article></div>
     </div>
-
-    <div data-language-panel="de" class="language-panel" hidden>
-      <div class="legal-layout">
-        <aside class="legal-toc glass"><strong>Inhalt</strong><a href="#de-summary">Kurzfassung</a><a href="#de-local">Lokale Daten</a><a href="#de-ai">Optionale KI</a><a href="#de-mail">Mail-Zugriff</a><a href="#de-website">Website</a><a href="#de-control">Deine Kontrolle</a><a href="#de-contact">Kontakt</a></aside>
-        <article class="legal-document glass">
-          <section id="de-summary">
-            <h2>1. Kurzfassung</h2>
-            <p>DocumentSorter funktioniert ohne ein vom Entwickler betriebenes Konto oder einen eigenen Cloud-Dienst. Die App enthält keine Werbung, Analyse, appübergreifendes Tracking oder Telemetrie. Standardmäßig werden Dokumente auf deinem Mac verarbeitet.</p>
-            <p>Zwei optionale Funktionen können Netzwerkverbindungen herstellen: die Verbindung mit einem IMAP-Mailkonto und die Auswahl von Anthropic Claude zur Dokumentklassifizierung. Beide Funktionen werden von dir eingerichtet und kontrolliert.</p>
-          </section>
-          <section id="de-local">
-            <h2>2. Auf deinem Mac gespeicherte Daten</h2>
-            <p>DocumentSorter kann folgende Informationen lokal im geschützten App-Container speichern:</p>
-            <ul>
-              <li>Verarbeitungsstatus, Klassifizierungsergebnisse, Prüfverlauf und Verschiebebelege;</li>
-              <li>die von dir gewählten Ordner und Regeln;</li>
-              <li>App-Einstellungen wie OCR-Sprachen und Klassifizierungsvorgaben;</li>
-              <li>Mailkonten-Konfigurationen ohne Passwörter;</li>
-              <li>lokal berechnete API-Nutzungs- und Kostenschätzungen.</li>
-            </ul>
-            <p>Mailpasswörter und dein optionaler Anthropic-API-Schlüssel werden getrennt im macOS-Schlüsselbund gespeichert. Über Sicherheitslesezeichen von macOS greift die App nur auf Ordner zu, die du selbst auswählst.</p>
-          </section>
-          <section id="de-ai">
-            <h2>3. Dokumentverarbeitung und optionaler Claude-Zugriff</h2>
-            <h3>Lokale Verarbeitung</h3>
-            <p>Wenn die lokale Verarbeitung ausgewählt und verfügbar ist, bleiben extrahierter Dokumenttext, Zielordnernamen und Klassifizierungsergebnisse auf deinem Mac und werden nicht an den Entwickler gesendet.</p>
-            <h3>Anthropic Claude (optional)</h3>
-            <p>Claude bleibt deaktiviert, bis du deinen eigenen Anthropic-API-Schlüssel hinterlegst und der Cloud-Verarbeitung ausdrücklich zustimmst. Danach sendet die App den extrahierten Dokumenttext, Namen deiner Zielordner, deine eigenen Klassifizierungsanweisungen und die gewünschte Ausgabesprache direkt an Anthropics Messages API. Anthropic übermittelt das Klassifizierungsergebnis zurück an die App.</p>
-            <p>Der Entwickler leitet diese Anfragen nicht weiter und erhält oder speichert sie nicht. Anthropic verarbeitet die Daten im Rahmen deiner Beziehung zu Anthropic und nach den dort geltenden Bedingungen und Datenschutzhinweisen. Aktiviere diese Option nicht für Dokumente, die du nicht an Anthropic übermitteln darfst.</p>
-          </section>
-          <section id="de-mail">
-            <h2>4. Optionaler Mail-Zugriff</h2>
-            <p>Wenn du ein IMAP-Konto hinzufügst, verbindet sich DocumentSorter direkt von deinem Mac mit dem von dir konfigurierten Mailanbieter. Die App prüft das ausgewählte Postfach auf neue Nachrichten und extrahiert nur von dir freigegebene Anhangstypen. Passende Anhänge werden im gewählten lokalen Eingangsordner gespeichert und müssen vor der Ablage immer geprüft werden.</p>
-            <p>Mail-Zugangsdaten liegen im macOS-Schlüsselbund. Für die Anhangsextraktion benötigte Nachrichtendaten werden lokal verarbeitet und nicht an den Entwickler gesendet. Um doppelte Downloads zu vermeiden, speichert DocumentSorter die zuletzt verarbeitete IMAP-Kennung lokal. Der Mailanbieter verarbeitet Verbindungs- und Kontodaten eigenständig nach seinen Datenschutzbedingungen.</p>
-          </section>
-          <section id="de-website">
-            <h2>5. Diese Website</h2>
-            <p>Diese Website wird als statische GitHub-Pages-Seite betrieben. Sie verwendet keine Cookies, Analyse, Werbung, Kontaktformulare oder eingebettete Drittanbieter-Medien. Eine Spracheinstellung kann lokal im Browser gespeichert werden und wird von der Website nicht übertragen.</p>
-            <p>GitHub kann als Hostinganbieter technische Anfragedaten wie IP-Adresse und Browserinformationen verarbeiten. Weitere Informationen stehen in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">Datenschutzerklärung von GitHub</a>.</p>
-          </section>
-          <section id="de-control">
-            <h2>6. Aufbewahrung, Löschung und deine Wahlmöglichkeiten</h2>
-            <p>Die von der App gespeicherten Daten bleiben auf deinem Mac, bis du sie entfernst, die betreffende Konfiguration löschst oder die App samt Daten deinstallierst. In den Einstellungen kannst du ein Mailkonto samt Passwort entfernen, den Anthropic-API-Schlüssel löschen, die Einwilligung zur Cloud-Verarbeitung widerrufen und Ordner trennen.</p>
-            <p>Um einen Zugriff auch beim Anbieter zu widerrufen, entferne die App oder das Zugangsmittel zusätzlich in den Kontoeinstellungen des jeweiligen Mail- oder KI-Anbieters. Da der Entwickler keine Kontodatenbank für DocumentSorter betreibt, liegen dort normalerweise keine serverseitigen App-Daten vor, die für dich abgerufen oder gelöscht werden könnten.</p>
-          </section>
-          <section id="de-contact">
-            <h2>7. Kontakt und Änderungen</h2>
-            <p>DocumentSorter wird von dem unabhängigen Entwickler gepflegt, der auf der App-Store-Produktseite genannt ist. Für Datenschutzfragen oder Support nutze den auf der <a href="support.html">Supportseite</a> genannten Kontaktweg oder die Kontaktinformationen im <a href="https://github.com/Ozel0t-G" rel="noreferrer">GitHub-Profil</a> des Entwicklers.</p>
-            <p>Diese Erklärung kann aktualisiert werden, wenn sich Funktionen oder rechtliche Anforderungen ändern. Wesentliche Änderungen werden hier mit einem neuen Gültigkeitsdatum veröffentlicht.</p>
-          </section>
-        </article>
-      </div>
+    <div data-language-panel="no" class="language-panel" hidden>
+      <div class="legal-layout"><aside class="legal-toc"><strong>Innhold</strong><a href="#no-summary">Kort fortalt</a><a href="#no-local">Lokale data</a><a href="#no-ai">Valgfri KI</a><a href="#no-mail">E-posttilgang</a><a href="#no-site">Nettsted</a><a href="#no-control">Din kontroll</a><a href="#no-contact">Kontakt</a></aside>
+      <article class="legal-document">
+        <section id="no-summary"><h2>1. Kort fortalt</h2><p>Clastra fungerer uten en konto eller skytjeneste drevet av utvikleren. Appen inneholder ingen annonser, analyse, sporing på tvers av apper eller telemetri. Som standard behandles dokumenter på Macen din.</p><p>Valgfrie nettverkstilkoblinger opprettes bare når du konfigurerer en e-postkonto eller velger en skybasert KI-modell som Anthropic Claude. Du har kontroll over begge deler.</p></section>
+        <section id="no-local"><h2>2. Data som lagres på Macen</h2><p>Clastra kan lagre behandlingsstatus, klassifiseringsresultater, gjennomgangshistorikk, flyttekvitteringer, valgte mapper, regler, innstillinger, e-postkonfigurasjon uten passord og lokalt beregnede bruks- eller kostnadsestimater i appens beskyttede beholder.</p><p>E-postpassord og valgfrie API-nøkler lagres separat i macOS-nøkkelringen. Sikkerhetsavgrensede bokmerker gir Clastra tilgang bare til mapper du velger.</p></section>
+        <section id="no-ai"><h2>3. Dokumentbehandling og valgfri KI</h2><h3>Apple-intelligens på enheten</h3><p>Når en lokal modell er valgt og tilgjengelig, blir uthentet tekst, mappenavn og klassifiseringsresultater på Macen og sendes ikke til utvikleren.</p><h3>Private Cloud Compute</h3><p>Hvis Apple gjør Private Cloud Compute tilgjengelig gjennom systemet ditt og du velger det, styres behandlingen av Apples gjeldende systemvilkår og personverninformasjon. Clastra mottar ikke disse forespørslene.</p><h3>Anthropic Claude (valgfritt)</h3><p>Claude forblir deaktivert til du legger inn din egen API-nøkkel og uttrykkelig tillater skybehandling. Clastra sender da uthentet dokumenttekst, navn på målmapper, egne instruksjoner og ønsket utdata-språk direkte til Anthropics API. Utvikleren verken videresender, mottar eller lagrer disse forespørslene.</p></section>
+        <section id="no-mail"><h2>4. Valgfri e-posttilgang</h2><p>Hvis du legger til en IMAP-konto, kobler Clastra seg direkte fra Macen til leverandøren du konfigurerer. Appen sjekker valgt postkasse og henter bare vedleggstyper du tillater. Passende vedlegg lagres i den lokale innboksen og venter på gjennomgang.</p><p>Påloggingsopplysninger forblir i nøkkelringen. Clastra lagrer den sist behandlede IMAP-identifikatoren lokalt for å hindre duplikater. Leverandøren behandler tilkoblings- og kontodata etter sine egne vilkår.</p></section>
+        <section id="no-site"><h2>5. Dette nettstedet</h2><p>Dette statiske GitHub Pages-nettstedet bruker ingen informasjonskapsler, analyse, annonser, kontaktskjemaer eller innebygde tredjepartsmedier. Valget mellom engelsk og norsk lagres bare lokalt i nettleseren.</p><p>GitHub kan behandle tekniske forespørselsdata som vertsleverandør. Se <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">GitHubs generelle personvernerklæring</a>.</p></section>
+        <section id="no-control"><h2>6. Oppbevaring, sletting og dine valg</h2><p>Appdata forblir på Macen til du fjerner dem, sletter den tilhørende konfigurasjonen eller avinstallerer Clastra og dataene. I Innstillinger kan du koble fra mapper, fjerne e-postkontoer og legitimasjon, slette API-nøkler og trekke tilbake samtykke til skybehandling.</p></section>
+        <section id="no-contact"><h2>7. Kontakt og endringer</h2><p>Bruk kanalen på <a href="support.html">brukerstøttesiden</a> eller kontaktinformasjonen på utviklerens <a href="https://github.com/Ozel0t-G" rel="noreferrer">GitHub-profil</a> ved personvernspørsmål. Vesentlige endringer publiseres her med en ny ikrafttredelsesdato.</p></section>
+      </article></div>
     </div>
   </main>
-
-  <footer class="site-footer section-wrap"><div class="footer-brand"><img src="assets/app-icon.png" alt="" width="28" height="28"><span>DocumentSorter</span></div><div class="footer-links"><a href="index.html" data-en="Overview" data-de="Übersicht">Overview</a><a href="support.html">Support</a><a href="https://github.com/Ozel0t-G/documentsorter-website">GitHub</a></div><p>© 2026 DocumentSorter.</p></footer>
+  <footer class="site-footer section-wrap"><div class="footer-brand"><img src="assets/app-icon.png" alt="" width="30" height="30"><span>Clastra</span></div><div class="footer-links"><a href="index.html" data-en="Overview" data-no="Oversikt">Overview</a><a href="support.html" data-en="Support" data-no="Brukerstøtte">Support</a><a href="https://github.com/Ozel0t-G/documentsorter-website">GitHub</a></div><p>© 2026 Clastra.</p></footer>
 </body>
 </html>
