@@ -1,12 +1,12 @@
-# DocumentSorter Website
+# Clastra Website
 
-Static product, support, and privacy website for the DocumentSorter macOS app.
+Static product, support, and privacy website for the Clastra macOS app.
 
 ## Pages
 
-- `index.html` — bilingual product page
-- `privacy.html` — English and German privacy policy
-- `support.html` — support channels and FAQ
+- `index.html` — English and Norwegian product page
+- `privacy.html` — English and Norwegian privacy policy
+- `support.html` — English and Norwegian support channels and FAQ
 
 The site contains no analytics, cookies, third-party fonts, build step, or runtime dependencies.
 
