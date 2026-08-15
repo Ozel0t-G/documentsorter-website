@@ -1,117 +1,113 @@
 <!doctype html>
-<html lang="en" data-page-title-en="Clastra — Intelligent document filing for macOS" data-page-title-no="Clastra — Intelligent dokumentarkivering for macOS">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f5f7">
-  <meta name="description" content="Clastra understands, renames, and files your documents — privately on your Mac.">
-  <meta property="og:title" content="Clastra for macOS">
-  <meta property="og:description" content="Every document. Exactly where it belongs.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://ozel0t-g.github.io/documentsorter-website/assets/social-preview.png">
-  <meta property="og:url" content="https://ozel0t-g.github.io/documentsorter-website/">
-  <title>Clastra — Intelligent document filing for macOS</title>
-  <link rel="icon" href="assets/app-icon.png">
-  <link rel="apple-touch-icon" href="assets/app-icon.png">
-  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0d0f12">
+  <meta name="description" content="A personal overview of the apps I develop as a hobby in my spare time.">
+  <title>Jan Gennat — Independent app developer</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main" data-en="Skip to content" data-no="Hopp til innhold">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <nav class="nav-shell" aria-label="Main navigation">
-      <a class="brand" href="index.html" aria-label="Clastra home">
-        <img src="assets/app-icon.png" alt="" width="36" height="36">
-        <span>Clastra</span>
+      <a class="wordmark" href="index.html" aria-label="Jan Gennat home">
+        <span class="wordmark-mark" aria-hidden="true"><i></i><i></i></span>
+        <span>Jan Gennat</span>
       </a>
-      <div class="nav-links">
-        <a href="#features" data-en="Features" data-no="Funksjoner">Features</a>
-        <a href="#privacy" data-en="Privacy" data-no="Personvern">Privacy</a>
-        <a href="support.html" data-en="Support" data-no="Brukerstøtte">Support</a>
-      </div>
-      <div class="nav-actions">
-        <button class="language-toggle" type="button" aria-label="Bytt språk til norsk"><span class="language-current">NO</span></button>
-        <a class="button button-compact button-primary" href="#availability" data-en="Get Clastra" data-no="Få Clastra">Get Clastra</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#apps">Apps</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero section-wrap">
+    <section class="hero personal-hero section-wrap">
       <div class="hero-copy reveal">
-        <p class="eyebrow" data-en="Intelligent filing for macOS" data-no="Intelligent arkivering for macOS">Intelligent filing for macOS</p>
-        <h1 data-en="Every document.<br>Exactly where it belongs." data-no="Hvert dokument.<br>Akkurat der det hører hjemme.">Every document.<br>Exactly where it belongs.</h1>
-        <p class="hero-lead" data-en="Clastra understands, renames, and files your documents — privately on your Mac." data-no="Clastra forstår, gir nytt navn til og arkiverer dokumentene dine — privat på Macen din.">Clastra understands, renames, and files your documents — privately on your Mac.</p>
+        <p class="eyebrow">Independent hobby developer</p>
+        <h1>Apps I build<br><span>in my spare time.</span></h1>
+        <p class="hero-lead">I develop apps as a hobby alongside my regular work. This website is a simple home for app information, privacy policies, and support.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#availability"><span data-en="Get Clastra" data-no="Få Clastra">Get Clastra</span><span aria-hidden="true">→</span></a>
-          <a class="button button-secondary" href="#workflow"><span aria-hidden="true">▶</span><span data-en="See how it works" data-no="Se hvordan det virker">See how it works</span></a>
-        </div>
-        <p class="hero-note" data-en="Built for macOS · Private by default" data-no="Bygget for macOS · Privat som standard">Built for macOS · Private by default</p>
-      </div>
-
-      <div class="hero-product reveal" aria-label="Clastra interface preview">
-        <img class="hero-icon" src="assets/app-icon.png" alt="Clastra app icon" width="250" height="250">
-        <div class="app-window">
-          <div class="window-bar"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><strong>Clastra</strong></div>
-          <div class="window-body">
-            <aside class="mini-sidebar"><span class="mini-nav active">Review</span><span class="mini-nav">Processing</span><span class="mini-nav">History</span></aside>
-            <div class="review-pane">
-              <p class="mini-kicker" data-en="Ready for review" data-no="Klar for gjennomgang">Ready for review</p>
-              <h3>Acme_Invoice_2026-08.pdf</h3>
-              <div class="document-card">
-                <span class="pdf-badge">PDF</span><div><strong>Acme Invoice</strong><small>3 August 2026 · €249.00</small></div><span class="score">96%</span>
-              </div>
-              <div class="destination-card"><small data-en="Suggested destination" data-no="Foreslått plassering">Suggested destination</small><strong>Finance / Invoices / 2026</strong></div>
-              <div class="review-actions"><button data-en="Change" data-no="Endre">Change</button><button class="approve" data-en="Approve &amp; File" data-no="Godkjenn og arkiver">Approve &amp; File</button></div>
-            </div>
-          </div>
+          <a class="button button-primary" href="#apps">View apps <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="privacy.html">Privacy information</a>
         </div>
       </div>
+      <aside class="site-purpose reveal" aria-label="About this website">
+        <span class="purpose-mark" aria-hidden="true"><i></i><i></i></span>
+        <p class="eyebrow">About this site</p>
+        <h2>One place for the practical details.</h2>
+        <dl>
+          <div><dt>Projects</dt><dd>Personal hobby apps</dd></div>
+          <div><dt>Platforms</dt><dd>Apple platforms</dd></div>
+          <div><dt>Here you’ll find</dt><dd>App info, privacy &amp; support</dd></div>
+        </dl>
+      </aside>
     </section>
 
-    <section class="principles section-wrap reveal" aria-label="Product principles">
-      <div><span class="principle-icon">⌁</span><p><strong data-en="On-device intelligence" data-no="Intelligens på enheten">On-device intelligence</strong><small data-en="Your documents stay on your Mac." data-no="Dokumentene blir på Macen din.">Your documents stay on your Mac.</small></p></div>
-      <div><span class="principle-icon">✓</span><p><strong data-en="You're always in control" data-no="Du har alltid kontroll">You're always in control</strong><small data-en="Review before anything moves." data-no="Se gjennom før noe flyttes.">Review before anything moves.</small></p></div>
-      <div><span class="principle-icon">↶</span><p><strong data-en="Safe and reversible" data-no="Trygt og reversibelt">Safe and reversible</strong><small data-en="Nothing is overwritten. Ever." data-no="Ingenting overskrives. Aldri.">Nothing is overwritten. Ever.</small></p></div>
-    </section>
+    <section class="apps-section section-wrap" id="apps">
+      <header class="section-heading reveal">
+        <div>
+          <p class="eyebrow">Apps</p>
+          <h2>Current projects</h2>
+        </div>
+        <p>I add apps here when they are ready. Each entry links to its information, privacy details, and support page.</p>
+      </header>
 
-    <section id="workflow" class="section-wrap section-block workflow-section">
-      <div class="section-heading centered reveal">
-        <p class="overline" data-en="A calmer workflow" data-no="En roligere arbeidsflyt">A calmer workflow</p>
-        <h2 data-en="From inbox to archive,<br>without the busywork." data-no="Fra innboks til arkiv,<br>uten rutinearbeidet.">From inbox to archive,<br>without the busywork.</h2>
-        <p data-en="Clastra quietly handles the repetitive steps. You make the decisions that matter." data-no="Clastra tar seg stille av de repetitive stegene. Du tar beslutningene som betyr noe.">Clastra quietly handles the repetitive steps. You make the decisions that matter.</p>
+      <div class="app-grid app-grid-directory">
+        <a class="app-card directory-card reveal" href="apps/clastra.html">
+          <span class="app-icon icon-clastra"><span>C</span></span>
+          <span class="platform-pill">macOS</span>
+          <span class="app-card-copy"><strong>Clastra</strong><span>A macOS utility for organizing and filing documents.</span></span>
+          <span class="directory-links">Information · Privacy · Support</span>
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="app-card directory-card reveal" href="apps/inkveil.html">
+          <span class="app-icon icon-inkveil"><span>I</span></span>
+          <span class="platform-pill">iPhone</span>
+          <span class="app-card-copy"><strong>InkVeil: Private Redaction</strong><span>An iPhone app for permanently redacting sensitive information in images and PDFs.</span></span>
+          <span class="directory-links">Information · Privacy · Support</span>
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </a>
       </div>
-      <div class="steps-grid">
-        <article class="step-card reveal"><span class="step-index">1</span><div class="step-visual inbox-visual"><span>PDF</span><span>DOCX</span><span>JPG</span></div><h3 data-en="Drop it in" data-no="Legg det inn">Drop it in</h3><p data-en="Add files to your inbox folder or import selected mail attachments." data-no="Legg filer i innboksmappen eller importer valgte e-postvedlegg.">Add files to your inbox folder or import selected mail attachments.</p></article>
-        <article class="step-card reveal"><span class="step-index">2</span><div class="step-visual understand-visual"><div class="scan-line"></div><span>Invoice · Acme · €249</span></div><h3 data-en="Clastra understands" data-no="Clastra forstår">Clastra understands</h3><p data-en="Text extraction and OCR identify what the document is and where it belongs." data-no="Tekstuthenting og OCR finner ut hva dokumentet er og hvor det hører hjemme.">Text extraction and OCR identify what the document is and where it belongs.</p></article>
-        <article class="step-card reveal"><span class="step-index">3</span><div class="step-visual filed-visual"><span>Finance</span><span>Invoices</span><span class="selected">2026 ✓</span></div><h3 data-en="Review and file" data-no="Se gjennom og arkiver">Review and file</h3><p data-en="Approve the suggestion. Clastra renames and files safely — with undo." data-no="Godkjenn forslaget. Clastra gir nytt navn og arkiverer trygt — med angre.">Approve the suggestion. Clastra renames and files safely — with undo.</p></article>
+    </section>
+
+    <section class="personal-note section-wrap reveal">
+      <div>
+        <p class="eyebrow">About the developer</p>
+        <h2>Built as a hobby,<br>maintained with care.</h2>
+      </div>
+      <div>
+        <p>I work on these apps independently in my spare time because I enjoy turning small ideas into useful software. There is no large company or support team behind this website — just one developer.</p>
+        <p>I still take privacy, reliability, and clear communication seriously.</p>
       </div>
     </section>
 
-    <section id="features" class="section-wrap section-block feature-story">
-      <article class="story-row reveal"><div><p class="overline" data-en="Fits your system" data-no="Passer systemet ditt">Fits your system</p><h2 data-en="Your archive.<br>Your rules." data-no="Ditt arkiv.<br>Dine regler.">Your archive.<br>Your rules.</h2><p data-en="Use the folder structure you already trust, choose a proven template, or build one from scratch. Folder descriptions teach Clastra exactly how you organize." data-no="Bruk mappestrukturen du allerede stoler på, velg en velprøvd mal, eller bygg din egen. Mappebeskrivelser lærer Clastra nøyaktig hvordan du organiserer.">Use the folder structure you already trust, choose a proven template, or build one from scratch. Folder descriptions teach Clastra exactly how you organize.</p></div><div class="folder-stack" aria-hidden="true"><div><span>00 Inbox</span><small>12</small></div><div><span>Finance</span><small>8</small></div><div><span>Contracts</span><small>5</small></div><div><span>Projects</span><small>17</small></div></div></article>
-      <article class="story-row reverse reveal"><div><p class="overline" data-en="Learns with you" data-no="Lærer med deg">Learns with you</p><h2 data-en="Confident when it can.<br>Careful when it should." data-no="Sikker når den kan.<br>Forsiktig når den bør.">Confident when it can.<br>Careful when it should.</h2><p data-en="Low-confidence decisions always wait for review. As you approve documents, Clastra learns when automatic filing is safe — while keeping every move reversible." data-no="Avgjørelser med lav sikkerhet venter alltid på gjennomgang. Når du godkjenner dokumenter, lærer Clastra når automatisk arkivering er trygt — og alle flyttinger kan angres.">Low-confidence decisions always wait for review. As you approve documents, Clastra learns when automatic filing is safe — while keeping every move reversible.</p></div><div class="confidence-panel" aria-hidden="true"><span class="confidence-ring">96<small>%</small></span><div><strong>Finance / Invoices</strong><small>High confidence</small></div><span class="checkmark">✓</span></div></article>
-    </section>
-
-    <section id="privacy" class="privacy-section">
-      <div class="section-wrap privacy-inner reveal"><span class="shield">⌂</span><div><p class="overline" data-en="Private by design" data-no="Privat fra grunnen av">Private by design</p><h2 data-en="Your documents are<br>not our business." data-no="Dokumentene dine<br>er ikke vår sak.">Your documents are<br>not our business.</h2><p data-en="No account, ads, analytics, or tracking. Apple on-device intelligence keeps content local. Optional cloud models are enabled only with your explicit consent and credentials." data-no="Ingen konto, annonser, analyse eller sporing. Apples intelligens på enheten holder innholdet lokalt. Valgfrie skymodeller aktiveres bare med ditt uttrykkelige samtykke og dine legitimasjonsopplysninger.">No account, ads, analytics, or tracking. Apple on-device intelligence keeps content local. Optional cloud models are enabled only with your explicit consent and credentials.</p><a class="text-link" href="privacy.html"><span data-en="Read the privacy policy" data-no="Les personvernerklæringen">Read the privacy policy</span><span>→</span></a></div></div>
-    </section>
-
-    <section id="availability" class="section-wrap availability reveal">
-      <img src="assets/app-icon.png" alt="" width="104" height="104">
-      <p class="overline" data-en="Made for the Mac" data-no="Laget for Mac">Made for the Mac</p>
-      <h2 data-en="A place for every document." data-no="En plass for hvert dokument.">A place for every document.</h2>
-      <p data-en="Clastra is being prepared for release on the Mac App Store." data-no="Clastra klargjøres for lansering i Mac App Store.">Clastra is being prepared for release on the Mac App Store.</p>
-      <a class="button button-primary" href="support.html" data-en="Stay informed" data-no="Hold deg oppdatert">Stay informed</a>
+    <section class="privacy-callout section-wrap reveal">
+      <div>
+        <p class="eyebrow">Privacy and support</p>
+        <h2>Shared pages,<br>app-specific details.</h2>
+      </div>
+      <div>
+        <p>The same permanent website address can be used for every App Store listing. Each app still has a clearly separated privacy section.</p>
+        <a class="text-link" href="privacy.html">View privacy information <span>→</span></a>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer section-wrap">
-    <div class="footer-brand"><img src="assets/app-icon.png" alt="" width="30" height="30"><span>Clastra</span></div>
-    <div class="footer-links"><a href="#features" data-en="Features" data-no="Funksjoner">Features</a><a href="privacy.html" data-en="Privacy" data-no="Personvern">Privacy</a><a href="support.html" data-en="Support" data-no="Brukerstøtte">Support</a><a href="https://github.com/Ozel0t-G/documentsorter-website" rel="noreferrer">GitHub</a></div>
-    <p>© 2026 Clastra. <span data-en="Made for macOS." data-no="Laget for macOS.">Made for macOS.</span></p>
+  <footer class="site-footer">
+    <div class="section-wrap footer-grid">
+      <div><a class="wordmark wordmark-footer" href="index.html"><span class="wordmark-mark"><i></i><i></i></span><span>Jan Gennat</span></a><p>Apps developed as a personal hobby.</p></div>
+      <div><strong>Apps</strong><a href="apps/clastra.html">Clastra</a><a href="apps/inkveil.html">InkVeil</a></div>
+      <div><strong>Information</strong><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="https://github.com/Ozel0t-G" rel="noreferrer">GitHub</a></div>
+      <p class="footer-meta">© <span data-current-year>2026</span> Jan Gennat. Personal hobby projects.</p>
+    </div>
   </footer>
 </body>
 </html>

@@ -1,41 +1,69 @@
-(() => {
-  const root = document.documentElement;
-  const toggle = document.querySelector('.language-toggle');
-  const current = document.querySelector('.language-current');
-  const translatable = document.querySelectorAll('[data-en][data-no]');
-  const panels = document.querySelectorAll('[data-language-panel]');
+const menuButton = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-  const preferredLanguage = () => {
-    const stored = localStorage.getItem('clastra-language');
-    if (stored === 'en' || stored === 'no') return stored;
-    return /^(no|nb|nn)/i.test(navigator.language) ? 'no' : 'en';
-  };
+if (menuButton && navLinks) {
+  menuButton.addEventListener('click', () => {
+    const open = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!open));
+    navLinks.classList.toggle('is-open', !open);
+  });
 
-  const setLanguage = (language) => {
-    root.lang = language === 'no' ? 'nb' : 'en';
-    translatable.forEach((element) => { element.innerHTML = element.dataset[language]; });
-    panels.forEach((panel) => { panel.hidden = panel.dataset.languagePanel !== language; });
-    document.title = root.dataset[`pageTitle${language === 'no' ? 'No' : 'En'}`] || document.title;
-    if (current) current.textContent = language === 'en' ? 'NO' : 'EN';
-    if (toggle) toggle.setAttribute('aria-label', language === 'en' ? 'Bytt språk til norsk' : 'Switch language to English');
-    localStorage.setItem('clastra-language', language);
-  };
+  navLinks.addEventListener('click', () => {
+    menuButton.setAttribute('aria-expanded', 'false');
+    navLinks.classList.remove('is-open');
+  });
+}
 
-  setLanguage(preferredLanguage());
-  toggle?.addEventListener('click', () => setLanguage(root.lang === 'en' ? 'no' : 'en'));
+document.querySelectorAll('[data-current-year]').forEach((item) => {
+  item.textContent = new Date().getFullYear();
+});
 
-  const reveals = document.querySelectorAll('.reveal');
-  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    reveals.forEach((element) => element.classList.add('visible'));
-    return;
-  }
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const revealItems = document.querySelectorAll('.reveal');
+
+if (reducedMotion || !('IntersectionObserver' in window)) {
+  revealItems.forEach((item) => item.classList.add('is-visible'));
+} else {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        entry.target.classList.add('is-visible');
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
-  reveals.forEach((element) => observer.observe(element));
-})();
+  }, { threshold: 0.12 });
+  revealItems.forEach((item) => observer.observe(item));
+}
+
+if (location.hash && document.querySelector(location.hash)) {
+  requestAnimationFrame(() => document.querySelector(location.hash).classList.add('is-targeted'));
+}
+
+const appSelector = document.querySelector('[data-app-selector]');
+if (appSelector) {
+  const params = new URLSearchParams(location.search);
+  if (params.get('app')) appSelector.value = params.get('app');
+  appSelector.addEventListener('change', () => {
+    const url = new URL(location.href);
+    url.searchParams.set('app', appSelector.value);
+    history.replaceState({}, '', url);
+  });
+}
+
+const languageChoices = document.querySelectorAll('[data-language-choice]');
+const languagePanels = document.querySelectorAll('[data-language-panel]');
+
+languageChoices.forEach((button) => {
+  button.addEventListener('click', () => {
+    const language = button.dataset.languageChoice;
+    languageChoices.forEach((choice) => {
+      const selected = choice.dataset.languageChoice === language;
+      choice.classList.toggle('is-active', selected);
+      choice.setAttribute('aria-pressed', String(selected));
+    });
+    languagePanels.forEach((panel) => {
+      panel.hidden = panel.dataset.languagePanel !== language;
+    });
+    document.documentElement.lang = language;
+  });
+});
