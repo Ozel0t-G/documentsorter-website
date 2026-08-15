@@ -1,6 +1,6 @@
 # Personal app website
 
-Static app information, privacy, and support website for hobby projects developed by Jan Gennat.
+Static app information, privacy, and support website for hobby projects developed by Ozel0t.
 
 ## Published apps
 
