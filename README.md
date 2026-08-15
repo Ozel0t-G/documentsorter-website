@@ -1,14 +1,15 @@
-# Clastra Website
+# Personal app website
 
-Static product, support, and privacy website for the Clastra macOS app.
+Static app information, privacy, and support website for hobby projects developed by Jan Gennat.
 
-## Pages
+## Published apps
 
-- `index.html` — English and Norwegian product page
-- `privacy.html` — English and Norwegian privacy policy
-- `support.html` — English and Norwegian support channels and FAQ
+- Clastra for macOS
+- InkVeil: Private Redaction for iPhone
 
-The site contains no analytics, cookies, third-party fonts, build step, or runtime dependencies.
+The privacy hub links to a complete app-specific policy for each app. InkVeil's policy is available in English, German, Norwegian Bokmål, and Swedish. Clastra's policy is available in English and Norwegian Bokmål.
+
+The site contains no analytics, cookies, advertising, contact forms, third-party fonts, build step, or runtime dependencies.
 
 ## Local preview
 
@@ -20,8 +21,6 @@ Open `http://localhost:8080`.
 
 ## GitHub Pages
 
-Publish from the repository's `main` branch and root directory. The expected URL is:
+The site is published from the repository's `main` branch and root directory:
 
 `https://ozel0t-g.github.io/documentsorter-website/`
-
-Before App Store or Google OAuth submission, add a verified private contact email and the publisher's legal identity to the privacy policy. A custom domain can be connected later without changing the site structure.

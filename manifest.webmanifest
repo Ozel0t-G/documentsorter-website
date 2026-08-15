@@ -1,12 +1,9 @@
 {
-  "name": "Clastra",
-  "short_name": "Clastra",
-  "description": "Intelligent, private document filing for macOS.",
+  "name": "Jan Gennat — Apps",
+  "short_name": "Jan Gennat",
+  "description": "App information, privacy policies, and support.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#f5f5f7",
-  "theme_color": "#f5f5f7",
-  "icons": [
-    { "src": "assets/app-icon.png", "sizes": "512x512", "type": "image/png" }
-  ]
+  "theme_color": "#0d0f12"
 }
